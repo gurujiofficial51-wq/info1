@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users - Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 28px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .search-box form {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        .search-box button {
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .search-box button:hover {
+            background: #764ba2;
+        }
+
+        .users-table {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .users-table h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #f8f9fa;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #666;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 5px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .pagination a:hover {
+            background: #764ba2;
+        }
+
+        .pagination .active {
+            background: #764ba2;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        .action-btn {
+            padding: 5px 12px;
+            margin: 0 3px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .btn-ban {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-ban:hover {
+            background: #c82333;
+        }
+
+        .btn-unban {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-unban:hover {
+            background: #218838;
+        }
+
+        .btn-delete {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-delete:hover {
+            background: #5a6268;
+        }
+
+        .banned-row {
+            background: #ffe6e6 !important;
+        }
+
+        .banned-badge {
+            background: #dc3545;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 10px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Telegram Bot Admin Panel</h1>
+            <nav>
+                <a href="/">Dashboard</a>
+                <a href="/users">All Users</a>
+                <a href="/search">Search</a>
+                <a href="/history">History</a>
+                <a href="/broadcast">Broadcast</a>
+                <a href="/settings">Settings</a>
+                <a href="/logout" style="float: right; color: #dc3545;">🚪 Logout</a>
+            </nav>
+        </header>
+
+        <div class="search-box">
+            <form action="/search" method="GET">
+                <input type="text" name="q" placeholder="Search by Telegram ID, username, or name...">
+                <button type="submit">🔍 Search</button>
+            </form>
+        </div>
+
+        <div class="users-table">
+            <h2>All Users (<%= totalUsers %>)</h2>
+            <% if (users.length> 0) { %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Telegram ID</th>
+                            <th>Username</th>
+                            <th>Name</th>
+                            <th>Wallet</th>
+                            <th>Status</th>
+                            <th>Registered</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% users.forEach(user=> { %>
+                            <tr class="<%= user.is_banned ? 'banned-row' : '' %>">
+                                <td>
+                                    <%= user.id %>
+                                </td>
+                                <td><code><%= user.telegram_id %></code></td>
+                                <td>
+                                    <%= user.username ? '@' + user.username : '-' %>
+                                </td>
+                                <td>
+                                    <%= user.first_name %>
+                                        <%= user.last_name || '' %>
+                                </td>
+                                <td><span
+                                        style="color: <%= user.wallet_balance > 5 ? '#28a745' : user.wallet_balance > 0 ? '#ffc107' : '#dc3545' %>">💰
+                                        <%= user.wallet_balance || 0 %>
+                                    </span></td>
+                                <td>
+                                    <% if (user.is_banned) { %>
+                                        <span class="banned-badge">🚫 BANNED</span>
+                                        <% } else { %>
+                                            <span style="color: #28a745;">✅ Active</span>
+                                            <% } %>
+                                </td>
+                                <td>
+                                    <%= new Date(user.registered_at).toLocaleString() %>
+                                </td>
+                                <td>
+                                    <% if (user.is_banned) { %>
+                                        <button class="action-btn btn-unban"
+                                            onclick="unbanUser('<%= user.telegram_id %>')">Unban</button>
+                                        <% } else { %>
+                                            <button class="action-btn btn-ban"
+                                                onclick="banUser('<%= user.telegram_id %>')">Ban</button>
+                                            <% } %>
+                                                <button class="action-btn btn-delete"
+                                                    onclick="deleteUser('<%= user.telegram_id %>', '<%= user.first_name %>')">Delete</button>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+
+                <% if (totalPages> 1) { %>
+                    <div class="pagination">
+                        <% if (currentPage> 1) { %>
+                            <a href="/users?page=<%= currentPage - 1 %>">← Previous</a>
+                            <% } %>
+
+                                <% for (let i=1; i <=totalPages; i++) { %>
+                                    <a href="/users?page=<%= i %>" class="<%= i === currentPage ? 'active' : '' %>">
+                                        <%= i %>
+                                    </a>
+                                    <% } %>
+
+                                        <% if (currentPage < totalPages) { %>
+                                            <a href="/users?page=<%= currentPage + 1 %>">Next →</a>
+                                            <% } %>
+                    </div>
+                    <% } %>
+                        <% } else { %>
+                            <div class="no-data">No users found</div>
+                            <% } %>
+        </div>
+    </div>
+
+    <script>
+        async function banUser(telegramId) {
+            const reason = prompt('Enter ban reason (optional):');
+            if (reason === null) return; // User clicked cancel
+
+            if (!confirm(`Are you sure you want to ban user ${telegramId}?`)) return;
+
+            try {
+                const response = await fetch('/ban-user', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ telegram_id: telegramId, reason })
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+
+        async function unbanUser(telegramId) {
+            if (!confirm(`Are you sure you want to unban user ${telegramId}?`)) return;
+
+            try {
+                const response = await fetch('/unban-user', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ telegram_id: telegramId })
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+
+        async function deleteUser(telegramId, userName) {
+            if (!confirm(`⚠️ WARNING: Are you sure you want to permanently delete user "${userName}" (${telegramId})?\n\nThis will delete:\n- User account\n- All search history\n- All referral records\n\nThis action CANNOT be undone!`)) return;
+
+            try {
+                const response = await fetch('/delete-user', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ telegram_id: telegramId })
+                });
+
+                const data = await response.json();
+                if (data.success) {
+                    alert(data.message);
+                    location.reload();
+                } else {
+                    alert('Error: ' + data.message);
+                }
+            } catch (error) {
+                alert('Error: ' + error.message);
+            }
+        }
+    </script>
+</body>
+
+</html>

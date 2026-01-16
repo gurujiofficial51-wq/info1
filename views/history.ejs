@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search History - Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 28px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        .history-table {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow-x: auto;
+        }
+
+        .history-table h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 1400px;
+        }
+
+        th {
+            background: #f8f9fa;
+            padding: 12px 8px;
+            text-align: left;
+            font-weight: 600;
+            color: #666;
+            border-bottom: 2px solid #e9ecef;
+            font-size: 12px;
+        }
+
+        td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 11px;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pagination a {
+            display: inline-block;
+            padding: 8px 12px;
+            margin: 0 3px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            font-size: 13px;
+        }
+
+        .pagination a:hover {
+            background: #764ba2;
+        }
+
+        .pagination .active {
+            background: #764ba2;
+        }
+
+        .pagination .dots {
+            display: inline-block;
+            padding: 8px 12px;
+            color: #666;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        code {
+            background: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📜 Search History</h1>
+            <nav>
+                <a href="/">Dashboard</a>
+                <a href="/users">All Users</a>
+                <a href="/search">Search</a>
+                <a href="/history">History</a>
+                <a href="/broadcast">Broadcast</a>
+                <a href="/settings">Settings</a>
+                <a href="/logout" style="float: right; color: #dc3545;">🚪 Logout</a>
+            </nav>
+        </header>
+
+        <div class="history-table">
+            <h2>All Search Results (<%= totalSearches %>)</h2>
+            <% if (searches.length> 0) { %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Result ID</th>
+                            <th>Searched Number</th>
+                            <th>Mobile</th>
+                            <th>Name</th>
+                            <th>Father</th>
+                            <th>Address</th>
+                            <th>Alt Mobile</th>
+                            <th>Circle</th>
+                            <th>ID Number</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% searches.forEach(search=> { %>
+                            <tr>
+                                <td><code><%= search.id %></code></td>
+                                <td><code><%= search.result_id || '-' %></code></td>
+                                <td><code><%= search.search_number %></code></td>
+                                <td><code><%= search.mobile || '-' %></code></td>
+                                <td>
+                                    <%= search.response_name || '-' %>
+                                </td>
+                                <td>
+                                    <%= search.father_name || '-' %>
+                                </td>
+                                <td style="max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
+                                    title="<%= search.address %>">
+                                    <%= search.address ? search.address.substring(0, 50) + '...' : '-' %>
+                                </td>
+                                <td><code><%= search.alt_mobile || '-' %></code></td>
+                                <td>
+                                    <%= search.circle || '-' %>
+                                </td>
+                                <td><code><%= search.id_number || '-' %></code></td>
+                                <td>
+                                    <%= search.email || '-' %>
+                                </td>
+                            </tr>
+                            <% }); %>
+                    </tbody>
+                </table>
+
+                <% if (totalPages> 1) { %>
+                    <div class="pagination">
+                        <% if (currentPage> 1) { %>
+                            <a href="/history?page=<%= currentPage - 1 %>">← Prev</a>
+                            <% } %>
+
+                                <% let startPage=Math.max(1, currentPage - 5); let endPage=Math.min(totalPages,
+                                    currentPage + 4); if (currentPage <=5) { endPage=Math.min(10, totalPages); } if
+                                    (currentPage> totalPages - 5) {
+                                    startPage = Math.max(1, totalPages - 9);
+                                    }
+
+                                    if (startPage > 1) { %>
+                                    <a href="/history?page=1">1</a>
+                                    <% if (startPage> 2) { %><span class="dots">...</span>
+                                        <% } %>
+                                            <% } for (let i=startPage; i <=endPage; i++) { %>
+                                                <a href="/history?page=<%= i %>"
+                                                    class="<%= i === currentPage ? 'active' : '' %>">
+                                                    <%= i %>
+                                                </a>
+                                                <% } if (endPage < totalPages) { %>
+                                                    <% if (endPage < totalPages - 1) { %><span class="dots">...</span>
+                                                        <% } %>
+                                                            <a href="/history?page=<%= totalPages %>">
+                                                                <%= totalPages %>
+                                                            </a>
+                                                            <% } %>
+
+                                                                <% if (currentPage < totalPages) { %>
+                                                                    <a href="/history?page=<%= currentPage + 1 %>">Next
+                                                                        →</a>
+                                                                    <% } %>
+                    </div>
+                    <% } %>
+                        <% } else { %>
+                            <div class="no-data">No search history yet</div>
+                            <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

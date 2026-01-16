@@ -1,0 +1,33 @@
+{
+  "name": "telegram-info-bot",
+  "version": "1.0.0",
+  "description": "Red Devils Info - Telegram bot with admin panel",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "admin": "node admin.js",
+    "dev": "node bot.js",
+    "both": "node bot.js & node admin.js"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "telegram-bot",
+    "info-bot"
+  ],
+  "author": "Red Devils",
+  "license": "ISC",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "^12.6.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "express-session": "^1.18.2",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}

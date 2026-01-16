@@ -1,0 +1,860 @@
+
+=== 2026-01-15T14:19:28.536Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:19:30.630Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:19:42.120Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:19:45.686Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:21:12.215Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:21:53.811Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:21:58.972Z ===
+Checking Refer button match...
+Text value: /refer
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/refer"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:22:01.524Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:41.878Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:42.484Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.063Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.075Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.710Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.716Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.721Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.727Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:43.731Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:44.410Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:44.419Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:44.424Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:44.428Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:22:44.431Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:25:18.125Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:25:30.330Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:25:33.544Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:25:38.526Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:25:40.367Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:25:51.520Z ===
+Checking Refer button match...
+Text value: 💰 Wallet
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "💰 Wallet"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:25:58.410Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:26:03.457Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:26:04.500Z ===
+Checking Refer button match...
+Text value: 🎁 Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? true
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:27:51.752Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:27:54.900Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:31:06.405Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:31:20.120Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:31:22.475Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:32:48.093Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:32:54.936Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:32:59.022Z ===
+Checking Refer button match...
+Text value: 💰 Wallet
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "💰 Wallet"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:33:02.573Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:33:23.493Z ===
+Checking Refer button match...
+Text value: ❌ Cancel
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "❌ Cancel"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:33:30.483Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:35:33.203Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:35:46.486Z ===
+Checking Refer button match...
+Text value: /start REF6037267083
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start REF6037267083"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:36:22.263Z ===
+Checking Refer button match...
+Text value: /start REF6037267083
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start REF6037267083"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:36:27.935Z ===
+Checking Refer button match...
+Text value: 💰 Wallet
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "💰 Wallet"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:40:25.432Z ===
+Checking Refer button match...
+Text value: ℹ️ About
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "ℹ️ About"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-15T14:40:28.101Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:40:28.706Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-15T14:40:41.609Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-16T05:45:17.237Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T05:45:28.059Z ===
+Checking Refer button match...
+Text value: 7408141073
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "7408141073"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T05:46:06.195Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T05:46:13.798Z ===
+Checking Refer button match...
+Text value: 7408141073
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "7408141073"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T05:51:42.390Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-16T05:55:25.390Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T05:55:49.796Z ===
+Checking Refer button match...
+Text value: /start
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:08:03.543Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:08:09.610Z ===
+Checking Refer button match...
+Text value: 8808486533
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "8808486533"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:09:10.725Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-16T06:09:13.693Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:09:19.779Z ===
+Checking Refer button match...
+Text value: 8808486533
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "8808486533"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:09:54.923Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:09:59.360Z ===
+Checking Refer button match...
+Text value: 9793317275
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "9793317275"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:12:59.194Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:13:08.099Z ===
+Checking Refer button match...
+Text value: 7408141073
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "7408141073"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:16:11.647Z ===
+Checking Refer button match...
+Text value: 💰 Wallet
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "💰 Wallet"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:39:21.616Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:40:33.818Z ===
+Checking Refer button match...
+Text value: 8808486533
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "8808486533"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:59:36.981Z ===
+Checking Refer button match...
+Text value: 9793317275
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "9793317275"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:59:40.310Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T06:59:44.583Z ===
+Checking Refer button match...
+Text value: 9793317275
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "9793317275"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:00:50.233Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:00:53.229Z ===
+Checking Refer button match...
+Text value: 7570034916
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "7570034916"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:03:40.839Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:03:43.940Z ===
+Checking Refer button match...
+Text value: 7570034916
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "7570034916"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:04:13.518Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:04:16.172Z ===
+Checking Refer button match...
+Text value: 9793317275
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "9793317275"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:04:41.581Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T07:04:44.497Z ===
+Checking Refer button match...
+Text value: 9876543210
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "9876543210"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T08:19:55.087Z ===
+Checking Refer button match...
+Text value: Refer
+Text type: string
+Contains Refer? true
+Contains Earn? false
+Contains 🎁? false
+✅ PRIORITY MATCH: Refer button
+✅ Referral message sent successfully
+
+=== 2026-01-16T08:20:20.006Z ===
+Checking Refer button match...
+Text value: /start REF6195188292
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "/start REF6195188292"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T08:20:28.804Z ===
+Checking Refer button match...
+Text value: 📱 Enter 10 Digit Number
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "📱 Enter 10 Digit Number"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T08:20:33.819Z ===
+Checking Refer button match...
+Text value: ❌ Cancel
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "❌ Cancel"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T08:20:39.683Z ===
+Checking Refer button match...
+Text value: ❓ Help
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "❓ Help"
+Checks: Refer=false, Earn=false, Gift=false
+
+=== 2026-01-16T08:21:19.559Z ===
+Checking Refer button match...
+Text value: 💰 Wallet
+Text type: string
+Contains Refer? false
+Contains Earn? false
+Contains 🎁? false
+❌ NO MATCH for text: "💰 Wallet"
+Checks: Refer=false, Earn=false, Gift=false

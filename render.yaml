@@ -1,0 +1,37 @@
+version: 2
+services:
+  # Telegram Bot Service
+  - type: worker
+    name: red-devils-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node bot.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: BOT_USERNAME
+        sync: false
+      - key: API_KEY
+        sync: false
+      - key: API_URL
+        value: https://anishexploits.site/api/api.php
+      - key: NODE_ENV
+        value: production
+
+  # Admin Panel Service
+  - type: web
+    name: red-devils-admin
+    env: node
+    buildCommand: npm install
+    startCommand: node admin.js
+    envVars:
+      - key: ADMIN_PORT
+        value: 10000
+      - key: SESSION_SECRET
+        sync: false
+      - key: DEFAULT_ADMIN_USERNAME
+        sync: false
+      - key: DEFAULT_ADMIN_PASSWORD
+        sync: false
+      - key: NODE_ENV
+        value: production
